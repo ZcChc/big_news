@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- tips: 在文件夹中单击右键没有使用vs工具打开的的选项 vs重装一下 安装期间勾选复选框 -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- 引入login.css样式 和 layui样式-->
+  <link rel="stylesheet" href="./assets/css/login.css">
+  <link rel="stylesheet" href="./assets/lib/layui/css/layui.css">
+  <!-- 
+  live server 小型服务器 打开的时候会默认占用 5500 端口
+  http://127.0.0.1  (ip地址很特殊 表示是自己本地 自己网页)
+  http://localhost 域名的形式 表示是自己本地
+  192.168.37.201 本机的ip地址 也表示自己本地的地址(查看本地ip地址 ipconfig/all - [首选])
+  http://0.0.0.0/ 表示本地回环地址 也表示自己本地
+  
+  wrap: '包裹' "具有包裹性质的容器"
+
+
+ -->
+
+</head>
+
+<body>
+  <!-- lgoo大事件 区域 -->
+  <div class="layui-main">
+    <img src="./assets/images/logo.png" alt="">
+  </div>
+  <!--  -->
+  <div class="login-reg-box">
+    <!-- 登录注册框 标题区域 -->
+     <div class="title">
+      <img src="./assets/images/login_title.png" alt="">
+     </div>
+     <!-- 登录 注册表单区域 -->
+     <div class="login-wrap" id="go2Reg">
+      <a href="javascript:;">去注册</a>
+     </div>
+     <div class="reg-wrap" id="go2Login">
+      <a href="javascript:;">去登录</a>
+     </div>
+  </div>
+
+</body>
+
+<!-- 导入jquery -->
+<script src="./assets/lib/jquery.js"></script>
+<!-- 导入自己的login.js -->
+<script src="./assets/js/login.js"></script>
+</html>
