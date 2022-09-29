@@ -30,7 +30,14 @@
         }
        } 
     })
-  
+
+
+  //监听注册表单的事件
+  $('#form_reg').on('submit',function(e){
+    e.preventDefalut()
+    $.post('http://big-event-vue-api-t.itheima.net/api/reg'),
+    {username: $('#form_reg')}
+  })
 
 
   })
