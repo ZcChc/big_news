@@ -34,9 +34,16 @@
 
   //监听注册表单的事件
   $('#form_reg').on('submit',function(e){
-    e.preventDefalut()
+    // console.log(e)
+    e.preventDefault()
     $.post('http://big-event-vue-api-t.itheima.net/api/reg'),
-    {username: $('#form_reg')}
+    {username: $('#form_reg [name=username]').val(),password: $('#form_reg [name=password]').val() },
+    function(res) {
+      if(res.status !== 0){
+        return console.log(res.message)
+      }
+      console.log('注册成功')
+    }
   })
 
 
